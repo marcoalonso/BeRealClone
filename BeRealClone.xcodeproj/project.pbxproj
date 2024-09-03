@@ -12,6 +12,8 @@
 		6CDA605B2C8607FD00C1A345 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6CDA605A2C8607FD00C1A345 /* Assets.xcassets */; };
 		6CDA605E2C8607FD00C1A345 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6CDA605D2C8607FD00C1A345 /* Preview Assets.xcassets */; };
 		6CDA60652C86082000C1A345 /* Feed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CDA60642C86082000C1A345 /* Feed.swift */; };
+		6CDA60672C8609C300C1A345 /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CDA60662C8609C300C1A345 /* FeedCell.swift */; };
+		6CDA606A2C86453A00C1A345 /* ThreeDots.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CDA60692C86453A00C1A345 /* ThreeDots.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +23,8 @@
 		6CDA605A2C8607FD00C1A345 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6CDA605D2C8607FD00C1A345 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		6CDA60642C86082000C1A345 /* Feed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feed.swift; sourceTree = "<group>"; };
+		6CDA60662C8609C300C1A345 /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
+		6CDA60692C86453A00C1A345 /* ThreeDots.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreeDots.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,11 +57,13 @@
 		6CDA60552C8607FC00C1A345 /* BeRealClone */ = {
 			isa = PBXGroup;
 			children = (
+				6CDA60682C86452D00C1A345 /* Helpers */,
 				6CDA60562C8607FC00C1A345 /* BeRealCloneApp.swift */,
 				6CDA60582C8607FC00C1A345 /* ContentView.swift */,
 				6CDA605A2C8607FD00C1A345 /* Assets.xcassets */,
 				6CDA605C2C8607FD00C1A345 /* Preview Content */,
 				6CDA60642C86082000C1A345 /* Feed.swift */,
+				6CDA60662C8609C300C1A345 /* FeedCell.swift */,
 			);
 			path = BeRealClone;
 			sourceTree = "<group>";
@@ -68,6 +74,14 @@
 				6CDA605D2C8607FD00C1A345 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		6CDA60682C86452D00C1A345 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				6CDA60692C86453A00C1A345 /* ThreeDots.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,6 +155,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				6CDA60592C8607FC00C1A345 /* ContentView.swift in Sources */,
+				6CDA606A2C86453A00C1A345 /* ThreeDots.swift in Sources */,
+				6CDA60672C8609C300C1A345 /* FeedCell.swift in Sources */,
 				6CDA60652C86082000C1A345 /* Feed.swift in Sources */,
 				6CDA60572C8607FC00C1A345 /* BeRealCloneApp.swift in Sources */,
 			);

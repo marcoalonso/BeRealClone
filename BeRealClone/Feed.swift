@@ -14,6 +14,58 @@ struct Feed: View {
                 .ignoresSafeArea()
             
             ZStack {
+                ScrollView {
+                    VStack {
+                        VStack {
+                            ZStack {
+                                VStack(alignment: .leading) {
+                                    Image("back")
+                                        .resizable()
+                                        .scaledToFit()
+                                        .cornerRadius(5)
+                                }
+                                
+                                VStack {
+                                    HStack {
+                                        Image("marco")
+                                            .resizable()
+                                            .scaledToFit()
+                                            .border(.black)
+                                            .cornerRadius(2)
+                                            .frame(width: 20, height: 40)
+                                            .padding(.leading)
+                                        Spacer()
+                                    }
+                                    .padding(.top, 18)
+                                    Spacer()
+                                }
+                            }
+                            .frame(width: 100)
+                        }
+                        
+                        VStack {
+                            Text("Add a caption ...")
+                                .foregroundColor(.white)
+                                .fontWeight(.semibold)
+                            
+                            Text("View Comment")
+                                .foregroundColor(.gray)
+                            
+                            HStack {
+                                Text("Testing - this app - 1 hr late")
+                                    .foregroundColor(.gray)
+                                    .font(.system(size: 12))
+                                ThreeDots(size: 3, color: .gray)
+                            }
+                        }
+                        
+                        ForEach(1..<8) { _ in
+                        FeedCell()
+                        }
+                    }
+                    .padding(.top, 80)
+                }
+                
                 VStack {
                     VStack {
                         HStack {
